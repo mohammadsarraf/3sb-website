@@ -3,14 +3,14 @@
 
 # # 3 Style Blind
 
-# In[84]:
+# In[12]:
 
 
 import pandas as pd
 import numpy as np
 
 
-# In[85]:
+# In[13]:
 
 
 DICT = \
@@ -31,7 +31,7 @@ values = "abcdefghijklmnopqrstuvwx".upper()
 values[23]
 
 
-# In[86]:
+# In[14]:
 
 
 path_data = './'
@@ -42,19 +42,20 @@ types = pd.read_csv("./UF Types.csv")
 
 ##UF Comms
 comms = pd.DataFrame()
-comms = pd.read_csv("./UF comms.csv")
+comms = pd.read_csv("./UF Comms.csv")
+comms
 
 
 # 
 
-# In[87]:
+# In[15]:
 
 
 letter = 'J'.upper()
 comms.at[DICT[letter] - 2, "F"]
 
 
-# In[91]:
+# In[16]:
 
 
 def get_cell_value(input_str, dataframeType, dataframeComms):
@@ -66,7 +67,7 @@ def get_cell_value(input_str, dataframeType, dataframeComms):
     return result[:len(result)]
 
 
-input_str = 'mx np no'.replace(" ", "")
+input_str = 'mx np npps'.replace(" ", "")
 value = get_cell_value(input_str, types, comms)
 value
 
