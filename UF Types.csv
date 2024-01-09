@@ -1,0 +1,25 @@
+1st ->,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X
+A,,4-Mover,,4-Mover,4-Mover,U-Swap,U-Swap,U-Swap,,4-Mover,E-Swap,4-Mover,4-Mover,U-Swap,U-Swap,U-Swap,,4-Mover,4-Mover,4-Mover,4-Mover,4-Mover,4-Mover,4-Mover
+B,4-Mover,,,4-Mover,S-Swap,U-Swap,U-Swap,U-Swap,,U-Swap,M-Swap,U-Swap,,U-Swap,U-Swap,U-Swap,M-Swap,U-Swap,Alg,U-Swap,F-Swap,4-Mover,M-Swap,Alg
+C,,,,,,,,,,,,,,,,,,,,,,,,
+D,4-Mover,4-Mover,,,,U-Swap,U-Swap,U-Swap,,U-Swap,M-Swap,U-Swap,S-Swap,U-Swap,U-Swap,U-Swap,M-Swap,U-Swap,Alg,U-Swap,F-Swap,Alg,M-Swap,4-Mover
+E,4-Mover,S-Swap,,,,U-Swap,4-Mover,U-Swap,,U-Swap,M-Swap,U-Swap,4-Mover,4-Mover,4-Mover,4-Mover,M-Swap,4-Mover,Alg,E-Swap,4-Mover,S-Swap,M-Swap,S-Swap
+F,U-Swap,U-Swap,,U-Swap,U-Swap,,S-Insert,4-Mover,,E-Swap,M-Swap,,4-Mover,4-Mover,4-Mover,4-Mover,M-Swap,E-Swap,E-Swap,E-Swap,F-Swap,4-Mover,M-Swap,4-Mover
+G,U-Swap,U-Swap,,U-Swap,4-Mover,S-Insert,,S-Insert,,E-Swap,S-Swap,4-Mover,4-Mover,4-Mover,4-Mover,4-Mover,M-Swap,4-Mover,E-Swap,E-Swap,4-Mover,S-Swap,S-Swap,
+H,U-Swap,U-Swap,,U-Swap,U-Swap,4-Mover,S-Insert,,,E-Swap,M-Swap,E-Swap,4-Mover,4-Mover,4-Mover,4-Mover,M-Swap,,U-Swap,E-Swap,4-Mover,4-Mover,M-Swap,4-Mover
+I,,,,,,,,,,,,,,,,,,,,,,,,
+J,4-Mover,U-Swap,,U-Swap,U-Swap,E-Swap,E-Swap,E-Swap,,,M-Swap,4-Mover,U-Swap,E-Swap,4-Mover,,M-Swap,4-Mover,M-Swap,4-Mover,4-Mover,Alg,M-Swap,4-Mover
+K,E-Swap,M-Swap,,M-Swap,M-Swap,M-Swap,S-Swap,M-Swap,,M-Swap,,M-Swap,M-Swap,M-Swap,S-Swap,M-Swap,S-Swap,M-Swap,Alg,M-Swap,,4-Mover,S-Swap,4-Mover
+L,4-Mover,U-Swap,,U-Swap,U-Swap,,4-Mover,E-Swap,,4-Mover,M-Swap,,U-Swap,E-Swap,E-Swap,E-Swap,M-Swap,4-Mover,4-Mover,4-Mover,4-Mover,4-Mover,M-Swap,Alg
+M,4-Mover,,,S-Swap,4-Mover,4-Mover,4-Mover,4-Mover,,U-Swap,M-Swap,U-Swap,,U-Swap,4-Mover,U-Swap,M-Swap,U-Swap,Alg,4-Mover,4-Mover,S-Swap,M-Swap,S-Swap
+N,U-Swap,U-Swap,,U-Swap,4-Mover,4-Mover,4-Mover,4-Mover,,E-Swap,M-Swap,U-Swap,U-Swap,,S-Insert,4-Mover,M-Swap,E-Swap,U-Swap,,4-Mover,4-Mover,M-Swap,4-Mover
+O,U-Swap,U-Swap,,U-Swap,4-Mover,4-Mover,4-Mover,4-Mover,,4-Mover,S-Swap,E-Swap,4-Mover,S-Insert,,S-Insert,M-Swap,E-Swap,E-Swap,4-Mover,4-Mover,,S-Swap,S-Swap
+P,U-Swap,U-Swap,,U-Swap,4-Mover,4-Mover,4-Mover,4-Mover,,,M-Swap,E-Swap,U-Swap,4-Mover,S-Insert,,M-Swap,E-Swap,E-Swap,E-Swap,F-Swap,4-Mover,M-Swap,4-Mover
+Q,,M-Swap,,M-Swap,M-Swap,M-Swap,M-Swap,M-Swap,,M-Swap,S-Swap,M-Swap,M-Swap,M-Swap,M-Swap,M-Swap,,M-Swap,S-Swap,M-Swap,S-Swap,M-Swap,S-Swap,M-Swap
+R,4-Mover,U-Swap,,U-Swap,4-Mover,E-Swap,4-Mover,,,4-Mover,M-Swap,4-Mover,U-Swap,E-Swap,E-Swap,E-Swap,M-Swap,,M-Swap,4-Mover,4-Mover,4-Mover,M-Swap,Alg
+S,4-Mover,Alg,,Alg,Alg,E-Swap,E-Swap,U-Swap,,M-Swap,Alg,4-Mover,Alg,U-Swap,E-Swap,E-Swap,S-Swap,M-Swap,,M-Swap,S-Swap,4-Mover,,4-Mover
+T ,4-Mover,U-Swap,,U-Swap,U-Swap,E-Swap,E-Swap,E-Swap,,4-Mover,M-Swap,4-Mover,4-Mover,,4-Mover,E-Swap,M-Swap,4-Mover,M-Swap,,4-Mover,Alg,M-Swap,4-Mover
+U ,4-Mover,F-Swap,,F-Swap,4-Mover,F-Swap,4-Mover,4-Mover,,4-Mover,,4-Mover,4-Mover,4-Mover,4-Mover,F-Swap,S-Swap,4-Mover,S-Swap,4-Mover,,F-Swap,Alg,F-Swap
+V,4-Mover,4-Mover,,Alg,S-Swap,4-Mover,S-Swap,4-Mover,,Alg,4-Mover,4-Mover,S-Swap,4-Mover,,4-Mover,M-Swap,4-Mover,4-Mover,Alg,F-Swap,,F-Swap,4-Mover
+W,4-Mover,M-Swap,,M-Swap,M-Swap,M-Swap,S-Swap,M-Swap,,M-Swap,S-Swap,M-Swap,M-Swap,M-Swap,S-Swap,M-Swap,S-Swap,M-Swap,,M-Swap,Alg,F-Swap,,F-Swap
+X,4-Mover,Alg,,4-Mover,S-Swap,4-Mover,,4-Mover,,4-Mover,4-Mover,Alg,S-Swap,4-Mover,S-Swap,4-Mover,M-Swap,Alg,4-Mover,4-Mover,F-Swap,4-Mover,F-Swap,
