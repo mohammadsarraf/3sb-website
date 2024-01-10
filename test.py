@@ -3,14 +3,14 @@
 
 # # 3 Style Blind
 
-# In[12]:
+# In[2]:
 
 
 import pandas as pd
 import numpy as np
 
 
-# In[13]:
+# In[3]:
 
 
 DICT = \
@@ -28,10 +28,10 @@ DICT_key = \
 }
 
 values = "abcdefghijklmnopqrstuvwx".upper()
-values[23]
+# values[23]
 
 
-# In[14]:
+# In[7]:
 
 
 path_data = './'
@@ -43,31 +43,30 @@ types = pd.read_csv("./UF Types.csv")
 ##UF Comms
 comms = pd.DataFrame()
 comms = pd.read_csv("./UF Comms.csv")
-comms
 
 
 # 
 
-# In[15]:
+# In[8]:
 
 
 letter = 'J'.upper()
 comms.at[DICT[letter] - 2, "F"]
 
 
-# In[16]:
+# In[14]:
 
 
 def get_cell_value(input_str, dataframeType, dataframeComms):
     result = []
     i = 0
     while i < len(input_str):
-        result.append(f"{input_str[i]}{input_str[i+1]}:  {dataframeType.at[DICT[input_str[i].upper()] - 2, input_str[i + 1].upper()]} {dataframeComms.at[DICT[input_str[i].upper()] - 2, input_str[i + 1].upper()]}")
+        result.append(f"{input_str[i]}{input_str[i+1]}:  {dataframeType.at[DICT[input_str[i+1].upper()] - 2, input_str[i].upper()]} {dataframeComms.at[DICT[input_str[i+1].upper()] - 2, input_str[i].upper()]}")
         i += 2
     return result[:len(result)]
 
 
-input_str = 'mx np npps'.replace(" ", "")
+input_str = 'mx xm npps'.replace(" ", "")
 value = get_cell_value(input_str, types, comms)
 value
 
