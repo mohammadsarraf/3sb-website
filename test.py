@@ -3,14 +3,14 @@
 
 # # 3 Style Blind
 
-# In[2]:
+# In[6]:
 
 
 import pandas as pd
 import numpy as np
 
 
-# In[3]:
+# In[7]:
 
 
 DICT = \
@@ -31,33 +31,41 @@ values = "abcdefghijklmnopqrstuvwx".upper()
 # values[23]
 
 
-# In[7]:
+# In[14]:
 
 
 path_data = './'
 
 ##UF Types
-types = pd.DataFrame()
-types = pd.read_csv("./UF Types.csv")
+UFtypes = pd.DataFrame()
+UFtypes = pd.read_csv("./UF Types.csv")
 
 ##UF Comms
-comms = pd.DataFrame()
-comms = pd.read_csv("./UF Comms.csv")
+UFcomms = pd.DataFrame()
+UFcomms = pd.read_csv("./UF Comms.csv")
+
+##UF Types
+UFRtypes = pd.DataFrame()
+UFRtypes = pd.read_csv("./UFR Types.csv")
+
+##UF Comms
+UFRcomms = pd.DataFrame()
+UFRcomms = pd.read_csv("./UFR Comms.csv")
 
 
 # 
 
-# In[8]:
+# In[16]:
 
 
-letter = 'J'.upper()
-comms.at[DICT[letter] - 2, "F"]
+letter = 'I'.upper()
+UFRcomms.at[DICT[letter] - 2, "G"]
 
 
-# In[14]:
+# In[10]:
 
 
-def get_cell_value(input_str, dataframeType, dataframeComms):
+def UF_get_cell_value(input_str, dataframeType, dataframeComms):
     result = []
     i = 0
     while i < len(input_str):
@@ -66,7 +74,24 @@ def get_cell_value(input_str, dataframeType, dataframeComms):
     return result[:len(result)]
 
 
-input_str = 'mx xm npps'.replace(" ", "")
-value = get_cell_value(input_str, types, comms)
+input_str = 'lb xm npps'.replace(" ", "")
+value = UF_get_cell_value(input_str, UFtypes, UFcomms)
+value
+
+
+# In[11]:
+
+
+def UFR_get_cell_value(input_str, dataframeType, dataframeComms):
+    result = []
+    i = 0
+    while i < len(input_str):
+        result.append(f"{input_str[i]}{input_str[i+1]}:  {dataframeType.at[DICT[input_str[i+1].upper()] - 2, input_str[i].upper()]} {dataframeComms.at[DICT[input_str[i+1].upper()] - 2, input_str[i].upper()]}")
+        i += 2
+    return result[:len(result)]
+
+
+input_str = 'lb'.replace(" ", "")
+value = UFR_get_cell_value(input_str, UFRtypes, UFRcomms)
 value
 
