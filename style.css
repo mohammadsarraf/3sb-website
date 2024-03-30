@@ -1,0 +1,9 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-title {
+    margin: 0;
+    padding-right: 20px; /* Adjust space between title and button if needed */
+}
